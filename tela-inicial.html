@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="Logo com fundo.jpeg"/>
+  <link rel="stylesheet" type="text/css" href="src/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <title>SuClimp</title> 
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <div id="imagemUser"></div>
+        <div id="displayName"></div>
+        <button class="btn btn-lg btn-block btn-default nav-link" id="logout">Logout</button>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container-fluid d-flex justify-content-center align-items-center">
+        <div>
+          <img src="src/img/Logo sem fundo.png" alt="LogoSuClimp" width="37" height="37">
+          <a class="navbar-brand">SuClimp</a>
+        </div>
+      </div>
+     
+
+      
+
+      <div class="ml-auto">
+                <button class="btn btn-lg btn-block btn-default nav-link" data-bs-toggle="modal" data-bs-target="#cestaModal">
+                <img src="src/img/carrinho.png" id="carrinho" alt="Imagem a ser feita">
+                </button>
+                <div id="popup" class="popup">
+                  <span class="close">&times;</span>
+                  <p>Seu carrinho</p>
+                  <ul id="itens-carrinho"></ul>
+                </div>
+                
+                
+      </div>
+    </div>
+  </nav>
+  
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="src/img/casa fundo.jpg" class="d-block w-100" alt="Uma imagem da feira">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Um site com produtos para casa, cosmeticos e muito mais.</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="src/img/fundo folhas.jpg" class="d-block w-100" alt="Pessoas mexendo em grãos e temperos">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Nada melhor do que manter sua autoestima sempre boa!</h5>
+          <p>Nossos produtos com certeza irão fazer você aproveitar o melhor da sua autoestima, e o melhor para a sua casa</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br><br>
+  <h2>Produtos de beleza</h2>
+  <br>
+  <div style="text-align:center">
+    <h5>Alguns produtinhos: </h5>
+  </div>
+ <br>
+
+ <div class="container text-center">
+    <div class="row g-3">
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <img src="src/img/creme 3.jpeg" class="card-img-top"
+            alt="Shampoo para cabelos danificados">
+          <div class="produto">
+            <h5 class="card-title">Shampoo pós quimica 250 ML</h5>
+            <h3 id="preco-produto" class="card-title">R$34,99</h3>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#creme">
+              Ver sobre
+            </button>
+     
+           
+
+            <div class="modal fade" id="creme" tabindex="-1" aria-labelledby="cremeLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="cremeLabel">Shampoo pós quimica para cabelos fracos.</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Shampoo Pós-Química Match SOS Cauterização 250ml</h4>
+
+                    <p>
+                      Com Match SOS Cauterização você pode fazer o que quiser com o seu cabelo,
+                      como alisamento, descoloração, tintura, escova progressiva, 
+                      relaxamento ou permanente, sem medo.<br>
+                      <br>
+                      Contando com o Shampoo Pós-Química Match SOS Cauterização e o uso combinado de todos os produtos da linha na sua rotina de cuidados capilares, 
+                      você repara qualquer dano químico severo desde a primeira aplicação.<br>
+                      <br>
+                      A fórmula do shampoo possui ingredientes de alta performance como a Queratina Biomimética, um ativo vegetal que traz um conceito inovador de reposição de queratina nos fios. 
+                      A Queratina Biomimética ajuda a regenerar a fibra capilar devolvendo força e maciez, sem pesar ou enrijecer os fios.<br>
+                      <br>
+                    </p>
+
+                    <h4>O Shampoo oferece diversos benefícios para ajudar na cauterização capilar:</h4>
+
+                    <p>
+                      - Limpa intensamente sem ressecar;<br>
+
+                      - Não agride o couro cabeludo.<br>
+
+                      - É compatível com qualquer química;<br>
+
+                      - Pode ser usado todos os dias.<br>
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <input type="number" id="quantidadeProduto-p1" min="1" max="20" value="1">
+                    <button type="button" class="btn btn-secondary btnMais" id="p1">Comprar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <img src="src/img/creme 1.jpeg" class="card-img-top" alt="condicionador">
+          <div class="produto">
+            <h5 class="card-title">Sophie condicionador</h5>
+            <h3 id="preco-produto" class="card-title">R$39,99</h3>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#condicionador">
+              Ver sobre
+            </button>
+            
+
+            <div class="modal fade" id="condicionador" tabindex="-1" aria-labelledby="condicionadorLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="condicionadorLabel">Condicionador infantil 200ml</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Condicionador Para Cabelos Sophie 200ml</h4>
+                    <p>
+                      O Condicionador Para Cabelos Sophie é o produto ideal para entregar cabelos soltos, 
+                      hidratados, com uma fragrância incrível e muito brilhantes.<br>
+                      <br>
+                      Sua fórmula rica em óleo de argan, pantenol e vitamina B5 entrega ultra hidratação, 
+                      sem embaraçar os fios, deixando seus cabelos com um movimento maravilhoso.<br>
+                      <br>
+                      Existem vários tipos de cabelo, não é? Tem o liso, o ondulado, o cabelo crespo... 
+                      E para atender todos eles, o Condicionador Para Cabelos Sophie é a resposta certa. 
+                      É isso mesmo, esse condicionador entrega muitos benefícios para todos os tipos de cabelo!<br>
+                      <br>
+                      Garantindo fios tão brilhantes que você vai achar que ele foi feito no planeta glitter, 
+                      além de um cheirinho floral que dura até 8 horas no cabelo.
+                    </p>
+
+                    <h4>Observações:</h4>
+
+                    <p>
+                      Recomendado para meninas de 07 a 12 anos.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <input type="number" id="quantidadeProduto-p2" min="1" max="20" value="1">
+                    <button type="button" class="btn btn-secondary btnMais" id="p2" >Comprar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <img src="src/img/creme 2.jpeg" class="card-img-top"
+            alt="Shampoo Match">
+          <div class="produto">
+            <h5 class="card-title">Shampoo Anti Oleosidade</h5>
+            <h3 id="preco-produto" class="card-title">R$29,99</h3>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Match">
+              Ver sobre
+            </button>
+            
+
+            <div class="modal fade" id="Match" tabindex="-1" aria-labelledby="ShampooMatchLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="ShampooMatchLabel">Shampoo Match Antioleosidade 250ml</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Shampoo Match Agente Antioleosidade 250ml</h4>
+                    <p>
+                      Não sabe como cuidar dos cabelos oleosos e acaba tendo que lavá-los todos os dias? 
+                      Match acredita que você não deveria ser refém da rotina de cansativa de lavar os seus cabelos todos os dias 
+                      para eliminar a oleosidade. 
+                      Por isso, criou a linha perfeita para dar adeus aos cabelos oleosos: Match Agente Anti Oleosidade!<br>
+                      <br>
+                      O Shampoo Anti Oleosidade é perfeito para o seu cronograma capilar. 
+                      Com fórmula vegana, ele limpa profundamente o couro cabeludo sem ressecar os fios, 
+                      enquanto regula e reduz a oleosidade do couro cabeludo. <br>
+                      <br>
+                      Match Agente Anti Oleosidade é a linha perfeita para dar adeus aos cabelos oleosos. 
+                      Ele reequilibra imediatamente o cabelo, controlando a produção excessiva de óleo e hidratando na medida certa, 
+                      para uma sensação de frescor por 48h.<br>
+                      <br>
+                      A fragrância cítrica que pertence à família olfativa Amadeirado Floral Cítrico dos produtos promove 
+                      sensação de frescor prolongado. 
+                      Ideal para cabelos leves e com movimento o dia todo.<br>
+                      <br>
+                    </p>
+
+                    <h4>Resultado: </h4>
+                    <p>
+                      Com Zinco PCA e Extrato de Pepino, a linha atua equilibrando a produção de oleosidade do couro cabeludo, 
+                      deixando seus cabelos com sensação de recém lavados por até 48h. 
+                      O shampoo limpa profundamente os fios regulando a oleosidade de couro cabeludo.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <input type="number" id="quantidadeProduto-p3" min="1" max="20" value="1">
+                    <button type="button" class="btn btn-secondary btnMais" id="p3" >Comprar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <img src="src/img/creme 4.jpeg" class="card-img-top"
+            alt="Egeo Dolce Creme Esfoliante Corporal, 200 ml">
+          <div class="produto">
+            <h5 class="card-title">Egeo Dolce Creme Esfoliante</h5>
+            <h3 id="preco-produto" class="card-title">R$199,99</h3>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#esfoliante">
+              Ver sobre
+            </button>
+            
+
+            <div class="modal fade" id="esfoliante" tabindex="-1" aria-labelledby="esfolianteLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="esfoianteLabel">Egeo Dolce Creme Esfoliante Corporal, 200 ml</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Egeo Dolce Creme Esfoliante Corporal</h4>
+                    <p>
+                      O Creme Esfoliante Corporal Egeo Dolce limpa a pele removendo as células mortas acumuladas ao longo dos dias, 
+                      deixando a textura suave e com a sensação de renovada<br>
+                      <br>
+                      A pele necessidade de cuidados especiais para se manter saudável e bonita. 
+                      Por isso, contar com o esfoliante certo ajuda a deixar ela hidratada e perfumada por mais tempo. <br>
+                      <br>
+                      A esfoliação na pele elimina as células que estão mortas e estimula a produção de outras novas, ricas em colágeno.<br>
+                      <br>
+                      Sua agradável essência é a combinação doce do aroma do marshmallow, do sorvete de framboesa, do algodão-doce e da baunilha, 
+                      se tornando inesquecível para quem usa. <br>
+                      <br>
+                    </p>
+
+                  </div>
+                  <div class="modal-footer">
+                    <input type="number" id="quantidadeProduto-p4" min="1" max="20" value="1">
+                    <button type="button" class="btn btn-secondary btnMais" id="p4" >Comprar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <img src="src/img/perfume.jpg" class="card-img-top"
+            alt="Perfume">
+          <div class="produto">
+            <h5 class="card-title">Malbec</h5>
+            <h3 id="preco-produto" class="card-title">R$179,99</h3>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#perfume">
+              Ver sobre
+            </button>
+            
+
+            <div class="modal fade" id="perfume" tabindex="-1" aria-labelledby="perfumeLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="orientalLabel">Malbec Bleu Desodorante Colônia 100ml</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Ingredientes</h4>
+                    <p>
+                      Inspirado pela cor azul, Malbec Bleu traz um frescor marcante para o coração amadeirado de Malbec.<br>
+                      <br>
+                      Ideal para o homem que ama a marca da perfumaria masculina e não abre mão de uma fragrância fresca.<br>
+                      <br>
+                      O desodorante colônia traz uma exclusiva combinação da força e da sensualidade das notas amadeiradas do 
+                      Sândalo e do Musgo de Carvalho com o frescor intenso e sofisticado das notas marinhas do Aquozone®<br>
+                      <br>
+                      Sendo o mais fresco entre os Malbecs, Malbec Bleu é sinônimo de um novo tipo de frescor para um novo jeito de atrair.<br>
+                      <br>
+                      Sua fragrância marcante é de alta fixação e possui durabilidade de 8 horas na pele*. 
+                      Perfeito para usar em todas as ocasiões e até mesmo durante o dia.<br>
+                      <br>
+                    <h4>Sobre</h4>
+                    <p>
+                   
+                      Malbec Bleu, você nunca sentiu tanto frescor em um Malbec!
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <input type="number" id="quantidadeProduto-p5" min="1" max="20" value="1">
+                    <button type="button" class="btn btn-secondary btnMais" id="p5" >Comprar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <img src="src/img/perfume1.jpg" class="card-img-top"
+            alt="Arbo">
+          <div class="produto">
+            <h5 class="card-title">Arbo</h5>
+            <h3 id="preco-produto" class="card-title">R$49,99</h3>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Ver sobre
+            </button>
+           
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Arbo Intenso Desodorante Colônia 100ml</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Arbo Intenso Desodorante Colônia 100ml</h4>
+
+                    <p>
+                      Arbo Intenso Desodorante Colônia, a fragrância  que te conecta com a natureza em qualquer lugar em uma fragrância intensa.<br>
+                      <br>
+                      Foi até a Ilha da Madeira em Portugal para desenvolver uma fragrância revigorante com os aromas mais puros da floresta<br>
+                      <br>
+                      Por meio da tecnologia Natureprint foi possível capturar os cheiros da Floresta Laurissilva, um frescor aromático e toque frutal sutil que se equilibra com as notas verdes.<br>
+                      <br>
+                    </p>
+
+                    <h4>Sobre</h4>
+
+                    <p>
+                      Com força amadeirada mais úmida e também com o lado envolvente do sândalo, esse fougère aromático, revigorante e único, 
+                      envolve sua pele com o frescor puro da neblina e o cheiro de madeira molhada das árvores centenárias desta 
+                      Floresta Produtora de Água, que irriga toda a mata.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <input type="number" id="quantidadeProduto-p6" min="1" max="20" value="1">
+                    <button type="button" class="btn btn-secondary btnMais" id="p6" >Comprar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+
+
+<br><br><br><br>
+
+<footer>
+  <div class="social-media">
+    <p>&copy; 2023 SuClimp. Todos os direitos reservados.</p>
+    <a href="https://instagram.com/su_climp?igshid=MzNlNGNkZWQ4Mg==" target="_blank">Instagram</a>
+  </div>
+  <div class="contact-us">
+    <a href="mailto:suclimp0711@gmail.com">Fale Conosco</a>
+    <br><br>
+    <p>Para mais dúvidas entre em contato</p>
+    <p>suclimp0711@gmail.com</p>
+  </div>
+</footer>
+
+<div class="overlay">
+  <div class="popupinic">
+    <h2>Bem-vindo a SuClimp</h2>
+    <br>
+    <p>Nosso site funciona de uma maneira bem simples e fácil.<br>
+    Todo nosso contato é feito por meio de comunicação 100% humanizada,<br>
+    sem riscos e com explicações melhores para deixar a sua compra mais confiável.
+    <br>
+    <hr>
+    Nossas entregas no momento são apenas realizadas em SP Capital,<br>
+    Nosso frete na Zona Norte de SP é de graça!!<br>
+    Para demais regiões entrar em contato!<br>
+    E ai, vamos nessa? :D
+  </p>
+    <button onclick="fecharPopUp()">Fechar</button>
+  </div>
+</div>
+<div class="modal fade" id="cestaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cesta de produtos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+     <div class="modal-body" id="bodyCestaModal">
+  <table id="cestaTable"></table>
+  <p id="emptyMessage" class="text-center">Não há produtos na cesta.</p>
+</div>
+
+      
+    <div class="modal-footer">
+       <span class="valor-total-footer" id="valorTotal"></span><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+       <button id="enviar-whatsapp" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Finalizar Pedido</button><!-- Botão para enviar por WhatsApp -->
+      <button type="button" id="continuar-comprando" class="btn btn-secondary" data-bs-dismiss="modal">Continuar comprando</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+  <script src="fbConfig.js"></script>
+  <script src="logout.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="src/js/popupinic.js" ></script> 
+  <script src="src/js/popupcar.js"></script>
+  
+</body>
+
+</html>

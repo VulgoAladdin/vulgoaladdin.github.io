@@ -1,0 +1,214 @@
+nav 
+{
+    background: linear-gradient(to right, #9fb089, #c1d4c1);
+}
+.carousel-item
+{
+    height: 600px;
+}
+
+body {
+    background: linear-gradient(to right, #9fb089, #c1d4c1)
+}
+
+h2
+{
+    display: flex;
+    justify-content: center;
+}
+.card-img-top
+{
+    width: 360px;
+    height: 659px;
+    object-fit: cover;
+}
+
+.btn-red 
+{
+    background-color: red !important;
+    color:rgba(255, 255, 255, 0.925) !important;
+}
+#google
+{
+    padding-top: 15px;
+}
+.contato
+{
+    padding-left: 15px;
+    margin: auto;
+    font-size: 20px; 
+}
+
+.floatWa {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
+}
+
+.img16 {
+    margin-top:16px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer .social-media,
+  footer .contact-us {
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    color: #888;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #333;
+  }
+  
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popupinic {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .popupinic h2 {
+    margin-top: 0;
+  }
+  
+  .popupinic button {
+    background-color: #67865f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  /* Estilos do modal */
+  #myModal {
+    display: none; /* Ocultar por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo escuro semi-transparente */
+  }
+  
+  #myModal .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .popup .close {
+    float: right;
+    cursor: pointer;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+  }
+  
+  .popup ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  #carrinho{
+    width: 35px;
+    height: 35px;
+    background-color: #c1d4c1;
+   
+  }
+
+  #enviar-whatsapp{
+    background-color:#198754;
+  }
+
+  #continuar-comprando{
+    background-color: #67865f;
+  }
+
+  .descricao-col{
+    padding: 30px;
+  }
+
+  .preco-col{
+    padding: 30px;
+  }
+
+  .quantidade-list{
+    padding: 20px;
+  }
+
+  .acao-list{
+    padding: 20px;
+  }
+  .descricao-list{
+    padding: 10px;
+  }
+  .preco-list{
+    padding: 25px;
+  }
+
+  #p1, #p2, #p3, #p4, #p5, #p6{
+    background-color: #198754;
+  }
+
+  .produto{
+    height: 100px;
+    background-color: #cacaca;
+
+  }
+
+  #preco-produto{
+    color:rgb(33, 34, 33);
+  }
+
+
+  
